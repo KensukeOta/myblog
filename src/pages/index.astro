@@ -1,17 +1,8 @@
 ---
-import Hello from "../components/atoms/Hello.svelte";
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "ホームページ";
 ---
 
-<html lang="ja">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>私のAstroサイト</h1>
-		<Hello />
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+	<h2>私の素晴らしいブログのサブタイトル</h2>
+</BaseLayout>
