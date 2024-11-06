@@ -1,17 +1,9 @@
 ---
 import Social from "../atoms/Social.astro";
-
-const platform = "github";
-const username = "KensukeOta";
 ---
 
-<footer>
-  <p>
-    私のプロジェクトについて詳しくは<a
-      href={`https://www.${platform}.com/${username}`}>{platform}</a
-    >をご確認ください！
-  </p>
-  <Social platform="twitter" username="astrodotbuild" />
+<footer class="flex gap-2 mt-8">
+  <Social platform="twitter" username="zaurusu0122" />
   <Social platform="github" username="KensukeOta" />
   <Social platform="youtube" username="astrodotbuild" />
 </footer>
