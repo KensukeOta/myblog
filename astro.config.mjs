@@ -11,6 +11,6 @@ import vercel from '@astrojs/vercel/serverless';
 export default defineConfig({
   site: "https://kensuke-ota.vercel.app",
   integrations: [tailwind(), svelte()],
-  output: 'hybrid',
+  output: 'server',
   adapter: vercel()
 });
