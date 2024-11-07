@@ -1,12 +1,12 @@
 ---
-import Navigation from "../molecules/Navigation.astro";
-import Hamburger from "../molecules/Hamburger.astro";
+import Navigation from "../molecules/Navigation.svelte";
+import HambergerMenu from "../organisms/HamburgerMenu.svelte"
 import ThemeIcon from "../atoms/ThemeIcon.astro";
 ---
 
 <header>
   <nav>
-    <Hamburger />
+    <HambergerMenu client:load />
     <ThemeIcon />
     <Navigation />
   </nav>

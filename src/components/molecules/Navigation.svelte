@@ -1,9 +1,9 @@
----
-
----
+<script lang="ts">
+  let { isOpen } = $props();
+</script>
 
 <div
-  class="w-full top-20 left-12 hidden m-0 sm:block sm:ml-[5em] sm:static sm:w-auto sm:bg-transparent"
+  class={`w-full top-20 left-12 hidden m-0 ${isOpen && "expanded"} sm:block sm:ml-[5em] sm:static sm:w-auto sm:bg-transparent`}
 >
   <a
     href="/"
