@@ -15,6 +15,7 @@
     "@astrojs/svelte": "^5.7.2",
     "@astrojs/tailwind": "^5.1.2",
     "astro": "^4.16.8",
+    "bootstrap-icons": "^1.11.3",
     "github-markdown-css": "^5.7.0",
     "svelte": "^5.1.9",
     "tailwindcss": "^3.4.14",
