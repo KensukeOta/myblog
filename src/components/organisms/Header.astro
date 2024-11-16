@@ -1,13 +1,36 @@
 ---
 import Navigation from "../molecules/Navigation.svelte";
-import HambergerMenu from "../organisms/HamburgerMenu.svelte"
+import HambergerMenu from "../organisms/HamburgerMenu.svelte";
 import ThemeIcon from "../atoms/ThemeIcon.astro";
 ---
 
 <header>
   <nav>
-    <HambergerMenu client:load />
-    <ThemeIcon />
+    <div class="flex justify-between">
+      <div class="grow">
+        <HambergerMenu client:load />
+      </div>
+
+      <div class="flex items-start gap-2">
+        <a
+          href="https://github.com/KensukeOta"
+          target="_blank"
+          title="github"
+          class="text-3xl leading-none"
+        >
+          <i class="bi bi-github"></i>
+        </a>
+        <a
+          href="https://twitter.com/zaurusu0122"
+          title="twitter"
+          target="_blank"
+          class="text-3xl leading-none"
+        >
+          <i class="bi bi-twitter-x"></i>
+        </a>
+        <ThemeIcon />
+      </div>
+    </div>
     <Navigation />
   </nav>
 </header>
